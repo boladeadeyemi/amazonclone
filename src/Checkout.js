@@ -14,7 +14,7 @@ function Checkout() {
                 <img classname= "checkout__ad" 
                 src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" alt="" />
 
-            <div>
+            <div >
               <h3>Hello, {user?.email}</h3>
             <h2 className="checkout__title">
                 Your shopping basket</h2>
@@ -33,12 +33,13 @@ function Checkout() {
                 {/* CheckoutProduct  */}
                 {/* CheckoutProduct  */}
                 {/* CheckoutProduct  */}
+              <button className="checkout__payment" onClick={ () => history.push("/payment")}>Proceed to Payment</button>
         </div>
         </div>
 
         <div className="checkout__right">
             <p>Subtotal:  N{getBasketTotal(basket)}</p>
-            <button onClick={ () => history.push("/review")}>Proceed to Review</button>
+            
         </div>
         {/* <div className="payment__section">
               <button onClick={handlePay}>PAY NOW</button>
